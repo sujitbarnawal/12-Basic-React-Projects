@@ -79,3 +79,35 @@
     }
 }
 
+@media screen and (max-width:541px){
+    .flex{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:431px){
+    .flex{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:415px){
+    .flex{
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width:391px){
+    .flex{
+        margin-left: 39%;
+    }
+}
+
+@media screen and (max-width:1025px){
+    .flex{
+        flex-direction: column;
+    }
+}
+
+
+

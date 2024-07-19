@@ -16,3 +16,33 @@
         background: none;
     }   
 }
+
+@media screen and (max-width:541px){
+    .footer{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:431px){
+    .footer{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:415px){
+    .footer{
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width:391px){
+    .footer{
+        margin-left: 39%;
+    }
+}
+
+@media screen and (max-width:361px){
+    .footer{
+        margin-left: 47%;
+    }
+}

@@ -20,7 +20,7 @@ const Contact = () => {
 
         emailjs
             .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-                publicKey: 'YOUR_PUBLIC_KEY',
+                publicKey: '5wuWtfsvwakIO-5sUafwh',
             })
             .then(
                 () => {
@@ -55,8 +55,8 @@ const Contact = () => {
                     Please fill out the form to discuss any work opportunities.
                 </span>
                 <form className="contact-form" onSubmit={sendEmail} ref={form}>
-                    <input type="text" className='name' placeholder='Your name' />
-                    <input type="email" className='email' placeholder='Your email' />
+                    <input type="text" className='name' placeholder='Your name' name=''/>
+                    <input type="email" className='email' placeholder='Your email' name=''/>
                     <textarea name="message" rows="5" placeholder='Your message' className='msg'></textarea>
                     <button className='submit-btn' type='submit' value="Send" >Submit</button>
                     <div className="links">

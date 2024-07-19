@@ -7,7 +7,6 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
-    height: 100vh;
     min-height: 100vh; 
 }
 
@@ -76,8 +75,38 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:541px){
+    #works{
+        margin-left: 15%;
+    }
+}
+
 @media screen and (max-width:435px){
     #works{
         margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:431px){
+    #works{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:415px){
+    #works{
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width:391px){
+    #works{
+        margin-left: 39%;
+    }
+}
+
+@media screen and (max-width:361px){
+    #works{
+        margin-left: 47%;
     }
 }
