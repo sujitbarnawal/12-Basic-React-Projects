@@ -17,22 +17,23 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+    
         emailjs
-            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-                publicKey: '5wuWtfsvwakIO-5sUafwh',
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                    alert('Email Sent !')
-                    e.target.reset()
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-    };
+          .sendForm('destinyserver', 'first_temp', form.current, {
+            publicKey: 'WwcgycZiYfKbBWZM_',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              alert("Message Sent")
+              e.target.reset()
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+    
 
     return (
         <section id="contact-page">
@@ -55,8 +56,8 @@ const Contact = () => {
                     Please fill out the form to discuss any work opportunities.
                 </span>
                 <form className="contact-form" onSubmit={sendEmail} ref={form}>
-                    <input type="text" className='name' placeholder='Your name' name=''/>
-                    <input type="email" className='email' placeholder='Your email' name=''/>
+                    <input type="text" className='name' placeholder='Your name' name='from_name'/>
+                    <input type="email" className='email' placeholder='Your email' name='your_email'/>
                     <textarea name="message" rows="5" placeholder='Your message' className='msg'></textarea>
                     <button className='submit-btn' type='submit' value="Send" >Submit</button>
                     <div className="links">

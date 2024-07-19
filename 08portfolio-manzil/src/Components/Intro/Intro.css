@@ -51,6 +51,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 10rem;
+    height: 3rem;
 }
 
 .btn-image{
